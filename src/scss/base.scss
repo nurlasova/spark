@@ -1,0 +1,28 @@
+body{
+    box-sizing: border-box;
+    background-color:$color-bg;
+}
+img{
+    max-width: 100%;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.section__title{
+    @include font ($color-title, 49px, normal,$font-robo);
+}
+.section__text{
+    line-height: 32px;
+    @include font(#655B6E, 18px, normal, $font-inter);
+}
