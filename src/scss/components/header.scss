@@ -2,10 +2,10 @@
     position: fixed; /* Фиксированное позиционирование */
     left: 0; right: 0; /* Вся ширина */
     top: 0; /* Положение сверху */
-    padding: 10px; /* Поля вокруг текста */
+    padding: 15px; /* Поля вокруг текста */
     background-color: $color-white;
-    z-index: 1;
     color: $color-black; /* Цвет текста */
+    z-index: 1;
     &__row{
         display: flex;
         align-items: center;

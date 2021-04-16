@@ -1,3 +1,7 @@
+.partners {
+  z-index: -1;
+}
+
 .partners .swiper-container {
   height: 80px;
 }
