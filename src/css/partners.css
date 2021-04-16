@@ -1,8 +1,5 @@
-.partners {
-  z-index: -1;
-}
-
 .partners .swiper-container {
+  z-index: -1;
   height: 80px;
 }
 
