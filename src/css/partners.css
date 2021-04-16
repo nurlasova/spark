@@ -1,0 +1,7 @@
+.partners .swiper-container {
+  height: 80px;
+}
+
+.partners .swiper1:last-child {
+  margin-right: 0;
+}

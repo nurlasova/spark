@@ -4,10 +4,86 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./src/css/index.css">
+    <link rel="shortcut icon" href="./src/img/png/rect.png">
     <title>sendspark</title>
 </head>
 <body>
-    
+    <header class="header">
+        <div class="container">
+            <div class="row header__row">
+                <div class="col-5">
+                    <svg  class="header__rect" width="20" height="23" viewBox="0 0 20 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15.6722 0.725098C17.6674 0.725098 19.2889 2.34657 19.2889 4.34176V22.4251L12.0556 20.014H3.61667C2.95361 20.014 2.33275 19.8392 1.80231 19.5257L7.09469 15.4088L13.5746 10.3695L7.09469 5.33032L1.80231 1.21335C2.33275 0.899898 2.95361 0.725098 3.61667 0.725098H15.6722ZM9.64444 10.3695L5.69625 13.4377L0.235083 17.6812C0.0843889 17.2834 0 16.8494 0 16.3973V4.34176C0 3.88968 0.0843889 3.45568 0.235083 3.05785L5.69625 7.3014L9.64444 10.3695Z"/>
+                        </svg>
+                        <svg width="104" height="23" viewBox="0 0 104 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6.1028 10.581C8.113 11.152 9.25439 12.4314 9.25439 14.3047C9.25439 16.5208 7.3816 17.96 4.8228 17.96C3.0185 17.96 1.305 17.2746 0.299896 15.8354L2.4015 14.0535C2.9271 14.8533 3.9092 15.3098 4.9833 15.3098C5.7819 15.3098 6.3995 15.0361 6.3995 14.4876C6.3995 13.985 5.9424 13.7792 4.709 13.4365L3.9092 13.2082C1.8305 12.6602 0.779396 11.2889 0.825396 9.5075C0.847896 7.4283 2.6074 6.03508 5.0057 6.03508C6.6738 6.03508 7.9756 6.65205 8.9122 7.65715L7.1533 9.55293C6.5139 8.98195 5.7141 8.61625 4.8688 8.61625C4.1604 8.61625 3.6579 8.84453 3.6579 9.32465C3.6579 9.73578 3.9092 9.96405 5.0287 10.2838L6.1028 10.581ZM15.8582 6.03485C18.8511 6.03485 21.4783 7.9542 21.4783 11.6549C21.4783 11.9292 21.4783 12.2483 21.4328 12.7284H12.8884C13.0712 14.2591 14.419 15.1043 15.9272 15.1043C17.3435 15.1043 18.3716 14.4419 18.8741 13.6651L21.204 15.401C20.1535 16.9317 18.3031 17.9598 15.9042 17.9598C12.5002 17.9598 9.8501 15.6069 9.8501 11.9976C9.8501 8.61602 12.3858 6.03485 15.8582 6.03485ZM13.0028 10.6038H18.3486C18.0743 9.256 16.9323 8.61602 15.7674 8.61602C14.6019 8.61602 13.3001 9.21057 13.0028 10.6038ZM29.1786 6.03496C31.9432 6.03496 33.5877 8.04574 33.5877 11.015V17.7086H30.4579V11.5406C30.4579 9.89551 29.7501 8.89041 28.4477 8.89041C27.0085 8.89041 25.9114 9.94151 25.9114 12.1346V17.7086H22.7823V6.28624H25.9114V7.58861C26.506 6.67436 27.6939 6.03496 29.1786 6.03496ZM43.3905 7.56556V0.574707H46.5203V17.7086H43.3905V16.4292C42.888 17.1606 41.677 17.9598 40.101 17.9598C37.0621 17.9598 34.7322 15.2412 34.7322 11.9977C34.7322 8.75351 37.0621 6.03491 40.101 6.03491C41.677 6.03491 42.888 6.83473 43.3905 7.56556ZM40.7634 15.1044C42.4763 15.1044 43.6418 13.779 43.6418 11.9977C43.6418 10.2157 42.4763 8.89036 40.7634 8.89036C39.0504 8.89036 37.8849 10.2157 37.8849 11.9977C37.8849 13.779 39.0504 15.1044 40.7634 15.1044ZM53.4672 10.581C55.4774 11.152 56.6194 12.4314 56.6194 14.3047C56.6194 16.5208 54.7466 17.96 52.1873 17.96C50.3829 17.96 48.6694 17.2746 47.6643 15.8354L49.766 14.0535C50.2915 14.8533 51.2742 15.3098 52.3477 15.3098C53.147 15.3098 53.7639 15.0361 53.7639 14.4876C53.7639 13.985 53.3074 13.7792 52.0734 13.4365L51.2742 13.2082C49.195 12.6602 48.1445 11.2889 48.1899 9.5075C48.2129 7.4283 49.9718 6.03508 52.3707 6.03508C54.0382 6.03508 55.3406 6.65205 56.2773 7.65715L54.5178 9.55293C53.8784 8.98195 53.0785 8.61625 52.2333 8.61625C51.5255 8.61625 51.0229 8.84453 51.0229 9.32465C51.0229 9.73578 51.2742 9.96405 52.3931 10.2838L53.4672 10.581ZM64.3881 6.03491C67.4264 6.03491 69.7569 8.75351 69.7569 11.9977C69.7569 15.2412 67.4264 17.9598 64.3881 17.9598C62.812 17.9598 61.6011 17.1606 61.0755 16.4292V22.4834H57.9458V6.28618H61.0755V7.56556C61.6011 6.83473 62.812 6.03491 64.3881 6.03491ZM63.7027 15.1044C65.4162 15.1044 66.5812 13.779 66.5812 11.9977C66.5812 10.2157 65.4162 8.89036 63.7027 8.89036C61.9898 8.89036 60.8243 10.2157 60.8243 11.9977C60.8243 13.779 61.9898 15.1044 63.7027 15.1044ZM78.965 7.56556V6.28618H82.094V17.7086H78.965V16.4292C78.462 17.1606 77.251 17.9598 75.675 17.9598C72.6369 17.9598 70.3064 15.2412 70.3064 11.9977C70.3064 8.75351 72.6369 6.03491 75.675 6.03491C77.251 6.03491 78.462 6.83473 78.965 7.56556ZM76.338 15.1044C78.051 15.1044 79.216 13.779 79.216 11.9977C79.216 10.2157 78.051 8.89036 76.338 8.89036C74.6246 8.89036 73.4591 10.2157 73.4591 11.9977C73.4591 13.779 74.6246 15.1044 76.338 15.1044ZM87.259 8.1137C87.648 6.99418 88.813 6.14893 90.093 6.14893C90.412 6.14893 90.755 6.17193 91.143 6.28635V9.4615C90.664 9.30165 90.229 9.21023 89.727 9.21023C88.242 9.21023 87.259 10.3758 87.259 12.2485V17.7087H84.13V6.28635H87.259V8.1137ZM98.532 11.7717L103.8 17.7086H99.939L95.278 12.4543V17.7086H92.149V0.574765H95.278V9.07671C95.535 9.16526 95.809 9.21931 96.101 9.21931C97.403 9.21931 98.111 8.21421 98.111 6.56971V5.57611H101.241V7.09469C101.241 9.39009 100.255 11.1082 98.532 11.7717Z" fill="black"/>
+                            </svg>
+                </div>
+                <div class="col-7">
+                    <div class="header__row header__right row">
+                        <ul class="header__menu">
+                            <li class="header__list"><a href="#" class="header__link">Solutions</a></li>
+                            <li class="header__list"><a href="#" class="header__link">Resources</a></li>
+                            <li class="header__list"><a href="#" class="header__link">Pricing</a></li>
+                            <li class="header__list"><a href="#" class="header__link">Sign In</a></li>
+                        </ul>
+                        <button class="header__button">Sign Up for Free</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="row hero__item">
+                    <div class="col-6">
+                        <h2 class="hero__title">Connect to customers with video</h2>
+                        <p class="hero__text">Drive more engagement. Build human relationships. Increase email conversions.</p>
+                        <button class="hero__button"  data-aos="fade-down">Get Started for Free</button>
+                        <p class="hero__description">No credit card required!</p>
+                    </div>
+                    <div class="col-6">
+                        <video class="header__video" width="544" height="408" controls="controls" poster="./src/img/png/hero__img.png">
+                        <source src="./src/video/customs.mp4" type="video">
+                        <source src="./src/video/customs.mp4" type='video/ogg; codecs="theora, vorbis"'>
+                        <source src="./src/video/customs.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                        <source src="video/duel.webm" type='video/webm; codecs="vp8, vorbis"'>
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="partners">
+            <div class="container">
+                <div class="row"> 
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper swiper1">
+                            <div class="col-2 swiper-slide">
+                                <img src="./src/img/svg/parthner1.svg" alt="userpilot">
+                            </div>
+                            <div class="col-2 swiper-slide">
+                                <img src="./src/img/svg/parthner2.svg" alt="chargify">
+                            </div>
+                            <div class="col-2 swiper-slide">
+                                <img src="./src/img/svg/parthner3.svg" alt="mailgun">
+                            </div>
+                            <div class="col-2 swiper-slide">
+                                <img src="./src/img/svg/parthner4.svg" alt="neihbor">
+                            </div>
+                            <div class="col-2 swiper-slide">
+                                <img src="./src/img/svg/parthner5.svg" alt="sift">
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>    
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./src/js/slider.js"></script>
 </body>
 </html>

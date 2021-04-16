@@ -1,0 +1,61 @@
+.header{
+    background-color: $color-bg;
+    margin:  45px 0;
+    &__row{
+        display: flex;
+        align-items: center;
+    }
+    &__right{
+        justify-content: flex-end;
+    }
+      &__menu{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__link{
+        @include font($color-black, 17px, normal, $font-inter);
+        margin-right: 40px;
+        text-decoration: none;
+        &:hover{
+            border-bottom: 1px solid $color-black;
+        }
+       
+    }
+    &__button{
+        @include font($color-white, 17px, normal, $font-inter);
+        background-color: $color-blue;
+        padding: 15px 22px;
+        border-radius: 2px;
+        border: none;
+        outline: none;
+        transition: 0.5s;
+        &:hover{
+            background-color: $color-yellow ;
+            color: $color-black;
+         }
+    }
+    &__rect{
+            width: 25px;
+            height: 25px;
+            fill: $color-blue;
+            transition: all 0.9s ease;
+            transform: rotate(0deg);
+            animation: rotate 2s linear infinite;
+                          
+            @keyframes rotate {
+                0% {
+                  transform: rotate(0deg);
+                  fill:$color-blue;
+                }
+                50% {
+                  transform: rotate(180deg);
+                  border-radius: 50%;
+                }
+                100% {
+                  transform: rotate(360deg);
+                  fill:$color-yellow;
+                }
+          }
+    }
+
+}
