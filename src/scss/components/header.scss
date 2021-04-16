@@ -1,6 +1,11 @@
 .header{
-    background-color: $color-bg;
-    margin:  45px 0;
+    position: fixed; /* Фиксированное позиционирование */
+    left: 0; right: 0; /* Вся ширина */
+    top: 0; /* Положение сверху */
+    padding: 10px; /* Поля вокруг текста */
+    background-color: $color-white;
+    z-index: 1;
+    color: $color-black; /* Цвет текста */
     &__row{
         display: flex;
         align-items: center;

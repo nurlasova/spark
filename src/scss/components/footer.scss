@@ -10,8 +10,8 @@
   }
   &__link {
     @include font($color-black, 16px, normal, $font-robo);
-    &:hover{
-        border-bottom: 1px solid $color-black;
+    &:hover {
+      border-bottom: 1px solid $color-black;
     }
   }
   &__list {
