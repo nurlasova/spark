@@ -1,0 +1,20 @@
+.footer {
+  padding: 125px 0 90px 0;
+  &__text {
+    margin: 32px 0 42px 0;
+    @include font($color-text, 12px, normal, $font-inter);
+    max-width: 330px;
+  }
+  &__icon {
+    margin-right: 10px;
+  }
+  &__link {
+    @include font($color-black, 16px, normal, $font-robo);
+    &:hover{
+        border-bottom: 1px solid $color-black;
+    }
+  }
+  &__list {
+    padding-bottom: 16px;
+  }
+}

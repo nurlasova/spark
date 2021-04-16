@@ -1,0 +1,42 @@
+.custom{
+    padding-top: 88px;
+    &__title{
+        max-width: 460px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    &__description{
+        @include font($color-text,16px,normal,$font-inter);
+        text-align: center;
+        margin-top: 20px;
+    }
+    &__video1{
+        padding: 64px 0 0 52px;
+    }
+    &__video2{
+        padding: 64px 52px 0 0;
+    }
+    &__subtitle{
+        padding:170px 0 40px 0;   
+        @include font($color-title, 22px, normal, $font-robo);
+    }
+    &__subtitle2{ 
+        @include font($color-title, 22px, normal, $font-robo);
+        padding:170px 0 40px 52px;   
+    }
+    
+    &__text1{
+        max-width: 450px;
+         @include font(#655B6E, 18px, normal, $font-inter);
+         line-height: 32px;
+     }
+    &__text2{
+       max-width: 450px;
+        @include font(#655B6E, 18px, normal, $font-inter);
+        line-height: 32px;
+        padding-left:52px;
+
+    }
+  
+   
+}

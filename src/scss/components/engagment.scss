@@ -1,0 +1,29 @@
+.engagment {
+  background-color: $color-purple;
+  margin-top: 144px;
+  &__item {
+    text-align: center;
+    flex-direction: column;
+  }
+  &__title {
+    @include font($color-white, 16px, normal, $font-inter);
+    text-align: center;
+    margin-top: 8px;
+  }
+  &__number {
+    @include font($color-white, 38px, normal, $font-robo);
+    text-align: center;
+    margin-top: 68px;
+  }
+  &__text {
+    @include font($color-white, 17px, normal, $font-inter);
+    text-align: center;
+    margin-top: 17px;
+  }
+  &__svg {
+    padding-top: 7px;
+    padding-bottom: 88px;
+    display: flex;
+    margin: auto;
+  }
+}
