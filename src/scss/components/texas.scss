@@ -1,0 +1,19 @@
+.texas {
+  background-color: $color-purple;
+  &__title {
+    @include font($color-white, 30px, normal, $font-robo);
+    width: 595px;
+    padding-top: 120px;
+  }
+  &__text {
+    @include font($color-text, 17px, normal, $font-inter);
+    margin-top: 29px;
+  }
+  &__svg {
+    margin-top: 26px;
+    margin-bottom: 82px;
+  }
+  &__image {
+    margin: 22px 0 32px 60px;
+  }
+}

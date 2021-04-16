@@ -1,0 +1,45 @@
+.screen {
+  background-color: $color-bg;
+  padding: 156px;
+  &__item {
+    padding-left: 160px;
+  }
+  &__title {
+    @include font($color-purple, 38px, normal, $font-robo);
+    width: 371px;
+  }
+  &__text {
+    @include font($color-text, 15px, normal, $font-inter);
+    line-height: 2;
+    width: 500px;
+    margin-top: 30px;
+  }
+  &__brave {
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+  }
+  &__description {
+    @include font($color-text, 19px, normal, $font-inter);
+    margin-left: 8px;
+    margin: 12px;
+  }
+  &__button {
+    align-items: center;
+    @include font($color-white, 17px, normal, $font-robo);
+    background-color: $color-button;
+    padding: 15px 30px;
+    border: none;
+    outline: none;
+    margin-top: 18px;
+    border-radius: 4px;
+    transition: 0.5s;
+        &:hover{
+            background-color: $color-yellow ;
+            color: $color-black;
+         }
+  }
+  &__svg {
+    margin-right: 7px;
+  }
+}

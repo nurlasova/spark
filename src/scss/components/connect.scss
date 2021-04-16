@@ -1,0 +1,38 @@
+.connect {
+  padding-top: 125px;
+  &__title {
+    text-align: center;
+  }
+  &__description {
+    @include font($color-text, 16px, normal, $font-inter);
+    text-align: center;
+    margin: 20px 0 70px;
+  }
+  &__left {
+    padding-top: 32px;
+  }
+  &__subtitle {
+    @include font($color-title, 22px, normal, $font-robo);
+    align-items: center;
+    margin-right: 10px;
+  }
+  &__text {
+    @include font(#655b6e, 12px, normal, $font-robo);
+    margin: 35px 0 20px;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+  }
+  &__line {
+    width: 385px;
+    height: 8px;
+    background-color: rgba(16, 11, 43, 0.1);
+    border-radius: 10px;
+    transition: 0.5s;
+    margin: 40px 0 30px 0;
+    &:hover {
+      background-color: $color-blue;
+    }
+  }
+}

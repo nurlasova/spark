@@ -270,3 +270,155 @@ a {
 .partners .swiper1:last-child {
   margin-right: 0;
 }
+
+.screen {
+  background-color: #E5E5E5;
+  padding: 156px;
+}
+
+.screen__item {
+  padding-left: 160px;
+}
+
+.screen__title {
+  color: #100B2B;
+  font-size: 38px;
+  font-weight: normal;
+  font-family: "Roboto", sans-serif;
+  width: 371px;
+}
+
+.screen__text {
+  color: #655B6E;
+  font-size: 15px;
+  font-weight: normal;
+  font-family: "Inter", sans-serif;
+  line-height: 2;
+  width: 500px;
+  margin-top: 30px;
+}
+
+.screen__brave {
+  display: flex;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.screen__description {
+  color: #655B6E;
+  font-size: 19px;
+  font-weight: normal;
+  font-family: "Inter", sans-serif;
+  margin-left: 8px;
+  margin: 12px;
+}
+
+.screen__button {
+  align-items: center;
+  color: #FCF8F2;
+  font-size: 17px;
+  font-weight: normal;
+  font-family: "Roboto", sans-serif;
+  background-color: #6140FF;
+  padding: 15px 30px;
+  border: none;
+  outline: none;
+  margin-top: 18px;
+  border-radius: 4px;
+  transition: 0.5s;
+}
+
+.screen__button:hover {
+  background-color: #FABC32;
+  color: #000000;
+}
+
+.screen__svg {
+  margin-right: 7px;
+}
+
+.texas {
+  background-color: #100B2B;
+}
+
+.texas__title {
+  color: #FCF8F2;
+  font-size: 30px;
+  font-weight: normal;
+  font-family: "Roboto", sans-serif;
+  width: 595px;
+  padding-top: 120px;
+}
+
+.texas__text {
+  color: #655B6E;
+  font-size: 17px;
+  font-weight: normal;
+  font-family: "Inter", sans-serif;
+  margin-top: 29px;
+}
+
+.texas__svg {
+  margin-top: 26px;
+  margin-bottom: 82px;
+}
+
+.texas__image {
+  margin: 22px 0 32px 60px;
+}
+
+.connect {
+  padding-top: 125px;
+}
+
+.connect__title {
+  text-align: center;
+}
+
+.connect__description {
+  color: #655B6E;
+  font-size: 16px;
+  font-weight: normal;
+  font-family: "Inter", sans-serif;
+  text-align: center;
+  margin: 20px 0 70px;
+}
+
+.connect__left {
+  padding-top: 32px;
+}
+
+.connect__subtitle {
+  color: #100B2B;
+  font-size: 22px;
+  font-weight: normal;
+  font-family: "Roboto", sans-serif;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.connect__text {
+  color: #655b6e;
+  font-size: 12px;
+  font-weight: normal;
+  font-family: "Roboto", sans-serif;
+  margin: 35px 0 20px;
+}
+
+.connect__item {
+  display: flex;
+  align-items: center;
+}
+
+.connect__line {
+  width: 385px;
+  height: 8px;
+  background-color: rgba(16, 11, 43, 0.1);
+  border-radius: 10px;
+  transition: 0.5s;
+  margin: 40px 0 30px 0;
+}
+
+.connect__line:hover {
+  background-color: #6140FF;
+}
