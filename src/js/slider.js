@@ -3,6 +3,7 @@ const swiper1 = new Swiper('.swiper-container', {
       loop: true,
       slidesPerView: 5,
       slidesPerGroup:1,
+      
       pagination: {
         el: '.swiper-pagination',
       },

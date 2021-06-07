@@ -1,12 +1,11 @@
 .partners {
-  z-index: -1;
+  z-index: 1;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
 }
 
 .partners .swiper-container {
-  z-index: -1;
+  z-index: 1;
   height: 80px;
-}
-
-.partners .swiper1:last-child {
-  margin-right: 0;
 }

@@ -3,9 +3,9 @@
     left: 0; right: 0; /* Вся ширина */
     top: 0; /* Положение сверху */
     padding: 15px; /* Поля вокруг текста */
-    background-color: $color-white;
+    background-color: $color-bg;
     color: $color-black; /* Цвет текста */
-    z-index: 1;
+    z-index: 5;
     &__row{
         display: flex;
         align-items: center;
@@ -34,6 +34,7 @@
         border: none;
         outline: none;
         transition: 0.5s;
+        cursor:pointer;
         &:hover{
             background-color: $color-yellow ;
             color: $color-black;
@@ -46,6 +47,7 @@
             transition: all 0.9s ease;
             transform: rotate(0deg);
             animation: rotate 2s linear infinite;
+            cursor: pointer;
                           
             @keyframes rotate {
                 0% {
